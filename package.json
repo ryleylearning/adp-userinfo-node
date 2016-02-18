@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "coverage": "NODE_ENV=TEST istanbul cover _mocha; cp coverage/lcov-report/index.html test/coverage.html",
+    "test": "mocha",
+    "lint": "eslint ./"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,11 @@
   "dependencies": {
     "winston": "^2.1.1",
     "adpcore": "git+ssh://git@bitbucket.es.ad.adp.com:7999/acl/adp-client-core-node.git"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^2.1.0",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5"
   }
 }
