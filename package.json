@@ -10,13 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@bitbucket.es.ad.adp.com:7999/acl/api-client-userinfo-node.git"
+    "url": "ssh://git@github.com:adplabs/adp-userinfo-node.git"
   },
   "author": "ADP Marketplace",
   "license": "ISC",
   "dependencies": {
-    "adpcore": "git+ssh://git@bitbucket.es.ad.adp.com:7999/acl/adp-client-core-node.git",
-    "adp": "git+ssh://git@bitbucket.es.ad.adp.com:7999/acl/api-client-node.git",
+    "adpcore": "git+ssh://git@github.com:adplabs/adp-core-node.git",
+    "adp": "git+ssh://git@github.com:adplabs/adp-connection-node.git",
     "config": "^1.19.0",
     "express": "^4.13.4",
     "winston": "^2.1.1"
