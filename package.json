@@ -15,8 +15,11 @@
   "author": "ADP Marketplace",
   "license": "ISC",
   "dependencies": {
-    "winston": "^2.1.1",
-    "adpcore": "git+ssh://git@bitbucket.es.ad.adp.com:7999/acl/adp-client-core-node.git"
+    "adpcore": "git+ssh://git@bitbucket.es.ad.adp.com:7999/acl/adp-client-core-node.git",
+    "adp": "git+ssh://git@bitbucket.es.ad.adp.com:7999/acl/api-client-node.git",
+    "config": "^1.19.0",
+    "express": "^4.13.4",
+    "winston": "^2.1.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
