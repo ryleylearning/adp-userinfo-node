@@ -19,7 +19,7 @@ governing permissions and limitations under the License.
 var express = require('express');
 var router = express.Router();
 var log = require('winston');
-var adp = require('adp');
+var adp = require('adp-connection');
 var ConnectionFactory = adp.ADPAPIConnectionFactory;
 var AuthorizationCodeConnType = adp.AuthorizationCodeConnType;
 var UserInfoHelper = require('./index');
