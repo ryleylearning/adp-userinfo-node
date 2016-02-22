@@ -58,7 +58,6 @@ router.get('/callback', function callback(req, res){
 			});
 		}
 	});
-
 });
 
 router.get('/authenticate', function login(req, res) {
