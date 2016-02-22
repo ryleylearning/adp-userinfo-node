@@ -5,7 +5,7 @@ The ADP User Info library wraps the API calls related to User Info API.
 
 ### Installation
 ```sh
-$ npm install adp-connection
+$ npm install adp-userinfo
 ```
 
 # Usage 

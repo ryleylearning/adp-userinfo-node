@@ -16,7 +16,7 @@ governing permissions and limitations under the License.
 
 'use strict';
 
-var userInfoHelper = require('./lib/userInfoHelper')
+var userInfoHelper = require('./lib/userInfoHelper');
 
 module.exports = userInfoHelper;
 

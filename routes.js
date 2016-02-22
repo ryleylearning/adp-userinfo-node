@@ -48,8 +48,8 @@ router.get('/callback', function callback(req, res){
 			res.send('Not Connected');
 		}else{
 			var userInfoHelper = new UserInfoHelper(connection);
-			userInfoHelper.getUserInfo({}, function getUserInfoCb(err, data){
-				if(err) {
+			userInfoHelper.getUserInfo({}, function getUserInfoCb(err2, data){
+				if(err2) {
 					res.send('Error getting user info.');
 				} else {
 					res.send(data);
