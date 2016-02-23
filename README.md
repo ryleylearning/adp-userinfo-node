@@ -24,10 +24,11 @@ var connection;
 	6. REDIRECT. 
 */
 router.get('/authenticate', function login(req, res) {
-	var adp = require('adp');
+	var adp = require('adp-connection');
 	var ConnectionFactory = adp.ADPAPIConnectionFactory;
 	var AuthorizationCodeConnType = adp.AuthorizationCodeConnType;
 	var connType = new AuthorizationCodeConnType();
+	var connectionFactory = new ConnectionFactory();
 	var initObject = {
 		clientId: 'ec762f06-7410-4f6d-aa82-969902c1836a',
 		clientSecret: '6daf2cd7-4604-46c0-ab43-a645a6571d34',
@@ -38,8 +39,8 @@ router.get('/authenticate', function login(req, res) {
 		sslCertPath: 'iatCerts/iat.pem',
 		callbackUrl: 'http://localhost:8889/callback'
 	};
+
 	connType.init(initObject);
-	var connectionFactory = new ConnectionFactory();
 	connection = connectionFactory.createConnection('authorization_code');
 	connection.init(connType);
 
@@ -58,6 +59,8 @@ router.get('/authenticate', function login(req, res) {
 router.get('/callback', function callback(req, res){
 	var state = req.query.state;
 	var code = req.query.code;
+	var UserInfoHelper = require('adp-userinfo');
+
 	if(!code) {
 		log.error('Error, no authorization code received');
 	}
