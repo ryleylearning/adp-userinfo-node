@@ -97,6 +97,7 @@ A sample client is provided to demonstrate usage of the libraries. The sample cl
 ### Authorization Code Example
 ```sh
 $ git clone https://github.com/adplabs/adp-userinfo-node.git
+$ cd adp-userinfo-node
 $ npm install
 $ node authorizationCodeExample
 ```
