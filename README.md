@@ -3,7 +3,7 @@
 The ADP User Info library wraps the API calls related to User Info API.
 
 ### Version
-`1.0.7-beta`
+`1.0.8`
 
 
 ### Installation
