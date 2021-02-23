@@ -16,8 +16,8 @@
   "author": "ADP Marketplace",
   "license": "ISC",
   "dependencies": {
-    "adp-connection": "^1.0.1",
-    "adp-core": "^1.0.0",
+    "adp-connection": "https://github.com/ryleylearning/adp-connection-node#v-1.1.1",
+    "adp-core": "https://github.com/ryleylearning/adp-core-node.git#v-1.0.10",
     "config": "^1.19.0",
     "express": "^4.13.4",
     "winston": "^2.1.1"
