@@ -44,7 +44,7 @@ acorn@^5.5.0:
 
 "adp-connection@https://github.com/ryleylearning/adp-connection-node#v-1.1.1":
   version "1.1.1"
-  resolved "https://github.com/ryleylearning/adp-connection-node#3aeeccde4e5a20ac3bad7270165f59614e66b7f3"
+  resolved "https://github.com/ryleylearning/adp-connection-node#80e8c349fe3e91da1de6137983be11a55e383e7f"
   dependencies:
     adp-core "https://github.com/ryleylearning/adp-core-node.git#v-1.0.10"
     config "^1.19.0"
@@ -55,7 +55,7 @@ acorn@^5.5.0:
 
 "adp-core@https://github.com/ryleylearning/adp-core-node.git#v-1.0.10":
   version "1.0.10"
-  resolved "https://github.com/ryleylearning/adp-core-node.git#b07d6c131a3841d7448f9280d746808751f488bc"
+  resolved "https://github.com/ryleylearning/adp-core-node.git#78e712c0b378abf55b3223e3f106bf2c6e78c43f"
   dependencies:
     request "^2.69.0"
     underscore "^1.8.3"
