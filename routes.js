@@ -18,7 +18,6 @@ governing permissions and limitations under the License.
 
 var express = require('express');
 var router = express.Router();
-var log = require('winston');
 var adp = require('adp-connection');
 var ConnectionFactory = adp.ADPAPIConnectionFactory;
 var AuthorizationCodeConnType = adp.AuthorizationCodeConnType;
@@ -77,7 +76,6 @@ router.get('/authenticate', function login(req, res) {
 	var connection = connectionFactory.createConnection('authorization_code');
 	connection.init(connType);
 	var url = connection.getAuthorizationRequest();
-	log.info('Redirecting: ' + url);
 	res.redirect(url);
 });
 
